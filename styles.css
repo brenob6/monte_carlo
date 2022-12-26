@@ -49,6 +49,10 @@ header {
 	width: 100%;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+}
 .icon {
 	font-size:2rem;
 	border-radius: 10%;
@@ -61,5 +65,5 @@ header {
 }
 
 .icon:hover {
-
+	background: rgb(60, 60, 60);
 }
