@@ -8,6 +8,8 @@ function drawRect() {
 
 	drawInSpace((ctx) => {
 
+		ctx.lineWidth = 3;
+		ctx.strokeStyle = "white";
 		ctx.strokeRect(0, 0, 500, 500)
 	})
 }
@@ -19,6 +21,8 @@ function drawCircle() {
 		ctx.beginPath();
 		ctx.arc(250, 250, 250, 0, Math.PI * 2, true);
 		
+		ctx.lineWidth = 3;
+		ctx.strokeStyle = "white";
 		ctx.stroke();
 	})
 }
@@ -40,23 +44,26 @@ function changePi(pi){
 	document.getElementById("pi").innerHTML = pi.toFixed(13)
 }
 
-drawCircle()
-drawRect()
+window.addEventListener("load", ()=>{
 
-let count_square = 0;
-let count_circle = 0;
+	drawCircle()
+	drawRect()
 
-setInterval(() => {
-	let xaxis = Math.random();
-	let yaxis = Math.random();
+	let count_square = 0;
+	let count_circle = 0;
 
-	if(Math.pow(xaxis - 0.5, 2) + Math.pow(yaxis - 0.5, 2) < 0.25)
-		count_circle++;
+	setInterval(() => {
+		let xaxis = Math.random();
+		let yaxis = Math.random();
 
-	count_square++;
+		if(Math.pow(xaxis - 0.5, 2) + Math.pow(yaxis - 0.5, 2) <= 0.25)
+			count_circle++;
 
-	drawDot(xaxis, yaxis)
-	pi = count_circle / ( count_square*0.25 );
+		count_square++;
 
-	changePi(pi)
-}, 500);
+		drawDot(xaxis, yaxis)
+		pi = count_circle / ( count_square*0.25 );
+
+		changePi(pi)
+	}, 0);
+});
