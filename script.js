@@ -41,7 +41,7 @@ function drawDot(x, y) {
 }
 
 function changePi(pi){
-	document.getElementById("pi").innerHTML = pi.toFixed(13)
+	document.getElementById("pi").innerHTML = pi.toFixed(12)
 }
 
 window.addEventListener("load", ()=>{
