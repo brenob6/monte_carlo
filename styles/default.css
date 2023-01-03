@@ -1,0 +1,11 @@
+body {
+  font-size: 10px;
+  color: white;
+  margin: 0;
+  background: rgb(35, 35, 35);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

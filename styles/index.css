@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2rem;
+  border-radius: 10%;
+  border: 3px solid;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background: rgb(60, 60, 60);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-title {
+  margin: auto;
+  font-size: 2rem;
+
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+
