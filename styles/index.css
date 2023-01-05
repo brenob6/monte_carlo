@@ -3,6 +3,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   padding: 10px 10%;
+  background: #1A120B
 }
 
 .logo {
@@ -27,26 +28,34 @@ nav {
 }
 
 .container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  gap 10px;
   justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background: #3C2A21;
 }
 
 .card .card-title {
+  position: absolute;
   margin: auto;
   font-size: 2rem;
+  font-weight: bold;
 
 }
 
 .card img {
-  height: 300px;
   object-fit: cover;
-  border-radius: 10%;
+  width: 100%;
 }
 
+.card:hover {
+  box-shadow: 5px 5px #1A120B;
+}
 
