@@ -15,6 +15,7 @@
   background: #1A120B;
   border-radius: 5%;
   box-shadow: 5px 5px 5px #1A120B;
+  transition: box-shadow 0.5s, margin-right 0.5s;
 }
 
 .card .card-title {
@@ -36,6 +37,8 @@
 }
 
 .card:hover {
+  box-shadow: 10px 10px 10px #1A120B;
+  margin-right: 5px;
 }
 .card:hover .card-description {
 }
