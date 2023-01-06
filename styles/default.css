@@ -1,8 +1,40 @@
+header {
+  margin-bottom: 10px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+  background: #1A120B
+}
+
+.logo {
+  font-size: 2rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2rem;
+  border-radius: 10%;
+  border: 3px solid;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background: rgb(60, 60, 60);
+}
+
 body {
   font-size: 10px;
   color: white;
   margin: 0;
-  background: #D5CEA3;
+  background: #3C2A21;
 }
 
 a {
